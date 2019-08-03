@@ -1,6 +1,6 @@
 package com.sogno.snake;
 
-import org.junit.Test;
+
 
 public class cat {
 

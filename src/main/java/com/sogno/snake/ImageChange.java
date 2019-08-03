@@ -1,8 +1,6 @@
 package com.sogno.snake;
 
-import java.awt.Color;
-import java.awt.Graphics2D;
-import java.awt.Transparency;
+import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
@@ -70,5 +68,12 @@ public class ImageChange {
 		return inputStream;
 	}
 	
-	
+	public static BufferedImage rotateImageBuffer(BufferedImage image, int degree, Color bgcolor) throws IOException{
+
+		return ImageIO.read(rotateImg(image, degree, bgcolor));
+
+	}
+
+
+
 }
